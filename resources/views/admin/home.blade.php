@@ -1,0 +1,1 @@
+<h1>iim admin home page</h1>

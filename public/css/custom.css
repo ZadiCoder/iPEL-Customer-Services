@@ -1,0 +1,156 @@
+/*Change Brand Name Fornt*/
+.navbar-brand{
+    font-family:'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+/*Change Navigation color*/
+.navbar #myMenu .custom-nav .nav-item a{
+    color: #fff;
+}
+.navbar #myMenu .custom-nav .nav-item a:hover{
+    color: #f0aab1;
+}
+/*Make Header image Responsive*/
+.back-image{
+    background-size: cover;
+    min-height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    margin-top: 74px;
+}
+
+
+/*Header image Sub-Title */
+.font-italic{
+    font-size: 34px;
+}
+
+.fi-color {
+    color: #ee3144;
+}
+
+.fi-color:hover {
+    color: #e994a2;
+}
+
+a{
+    color: black;
+}
+.active{
+    color:white ;
+    background-color: #353739; 
+}
+a:hover{
+    color: #757F85;
+}
+
+
+/*Margin For Welcome to OSMS */
+.mainHeading{
+    margin-top: 50px;
+}
+
+.stripe{
+    background-image: linear-gradient(240deg,#ed213a,#93291e);
+    padding: 3rem;
+    height: 15rem;
+    margin-top: 4rem;
+    transform: rotate(10deg);
+    z-index: -5;
+}
+
+
+
+@media only screen and (max-width:00px){
+.myClass{
+    margin-top: 350px;
+    text-align: center;
+    }
+}
+
+/************ CArds Start************/
+
+
+
+.card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    border: medium none;
+
+}
+
+.card{
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+.pricingdiv h1{
+	margin-top: 20px;
+}
+
+
+
+/************ CArds End************/
+
+/************ our cutomer feedback Start************/
+.happyclinets{
+	width: 100%;
+	height: 100%;
+	padding: 80px 0;
+	margin-top: 90px;
+}
+.box{
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+}
+.box:hover{
+	background: #16c9f6;
+}
+.box:hover{
+	color: white;
+}
+.carousel-indicators{
+	position: absolute;
+	right: 0;
+	bottom: -60px!important;
+}
+
+.carousel-indicators li{
+	background-color: #16c9f6!important;
+}
+
+.box a{
+	position: relative;
+}
+
+.box a img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
+.box h1{
+	font-size: 18px;
+	font-size: 700;
+	color: rgb(240, 233, 233);
+	margin-top: 10px;	
+}
+
+.box h2{
+	font-size: 13px;
+	font-weight: 400px;
+	color: #faf5f5;
+	margin-bottom: 20px;
+}
+
+/************ our cutomer feedback end************/
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
