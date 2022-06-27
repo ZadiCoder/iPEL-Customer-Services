@@ -4,15 +4,15 @@ use App\Http\Controllers\UsertypeController;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
 
 
-Route::get('/ipel',[BaseController::class,'home'])->name('home');
+Route::get('/',[BaseController::class,'home'])->name('iPEL');
 
 Route::prefix('admin')->group(function () {
-Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
+Route::get('dashboard',[AdminController::class,'dashboard'])->name('dashboard');
 Route::get('category/list',[CategoryController::class,'index'])->name('category.list');
 Route::get('category/add',[CategoryController::class,'create'])->name('category.create');
 Route::post('category/add',[CategoryController::class,'store'])->name('category.store');

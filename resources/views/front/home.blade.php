@@ -24,7 +24,7 @@
             <div class="card shadow-lg ">
                 <h4 class="card-title  text-white   p-2" style="background:#4682B4;">AC</h4>
                 <div class="card-body ">
-                    <img src="{{asset('images/AC.jpg')}}" class="img-fluid" alt="PEL"></a> 
+                    <img src="" class="img-fluid" alt="PEL"></a> 
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="card shadow-lg ">
                 <h4 class="card-title  text-white   p-2" style="background:#4682B4;">Washing Mecine</h4>
                 <div class="card-body ">
-                    <img src="{{asset('images/washing.jpg')}}" class="img-fluid" alt="PEL"></a> 
+                    <img src="" class="img-fluid" alt="PEL"></a> 
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
             <div class="card shadow-lg ">
                 <h4 class="card-title  text-white   p-2" style="background:#4682B4;">Water</h4>
                 <div class="card-body ">
-                    <img src="{{asset('images/water.jpg')}}" class="img-fluid" alt="PEL"></a> 
+                    <img src="" class="img-fluid" alt="PEL"></a> 
                 </div>
             </div>
         </div> -->
