@@ -24,8 +24,8 @@
     
             <td>
                 <a href="{{route('service.edit' , $data->id)}}" style="font-size: 17px; padding:5px;" ><i  class="fa fa-edit"></i></a>
-                <a href="javaseript::void(0)" style="font-size: 17px; padding:5px;" data-id="#"
-                class="delete"><i class="fa fa-trash" ></i></a>
+                <a href="javaseript::void(0)" style="font-size: 17px; padding:5px;" data-id="{{$data->id}}"
+                class="service_delete"><i class="fa fa-trash" ></i></a>
             </td> 
         </tr>
         @endforeach
@@ -34,3 +34,23 @@
 
 @endsection
 
+@push('footer-script')
+    <script>
+        $('.service_delete').on('click',function(){
+            if(confirm('Are You Delete This Service.')){
+                var id = $(this).data('id');
+                $.ajax({
+                    url:'{{route("service.delete")}}',
+                    mathod:'post',
+                    data:{
+                        _token: "{{ csrf_token() }}",
+                        'id':id
+                    },
+                    success: function(data){
+                        location.reload();
+                    }   
+                });  
+            }
+        });
+    </script>
+@endpush

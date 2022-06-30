@@ -11,6 +11,7 @@ Route::get('/welcome', function () {
 
 
 Route::get('/',[BaseController::class,'home'])->name('iPEL');
+Route::get('/service/details/{id}',[BaseController::class,'show_service_details'])->name('service.details');
 
 Route::prefix('admin')->group(function () {
 Route::get('dashboard',[AdminController::class,'dashboard'])->name('dashboard');
@@ -27,7 +28,10 @@ Route::get('service/add',[ServiceController::class,'create'])->name('service.cre
 Route::post('service/store',[ServiceController::class,'store'])->name('service.store');
 Route::get('service/edit/{id}',[ServiceController::class,'edit'])->name('service.edit');
 Route::post('service/update/{id}',[ServiceController::class,'update'])->name('service.update');
+Route::get('/service/delete',[ServiceController::class,'destroy'])->name('service.delete');
 });
+
+
 
 
 Route::prefix('usertype')->group(function () {

@@ -14,38 +14,12 @@
             <div class="card shadow-lg ">
                 <h4 class="card-title  text-white   p-2" style="background:#4682B4;">{{$item->category_name}}</h4>
                 <div class="card-body ">
-                    <img src="{{asset('images/'.$item->image)}}" class="img-fluid" alt="PEL"></a> 
+                    <a href="{{route('service.details' , $item->id)}}"><img src="{{asset('images/'.$item->image)}}" class="img-fluid" alt="PEL"></a></a>
+                     
                 </div>
             </div>
         </div>     
         @endforeach
-        <!-- <div class="col-md-4 col-sm-6">
-              
-            <div class="card shadow-lg ">
-                <h4 class="card-title  text-white   p-2" style="background:#4682B4;">AC</h4>
-                <div class="card-body ">
-                    <img src="" class="img-fluid" alt="PEL"></a> 
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-              
-            <div class="card shadow-lg ">
-                <h4 class="card-title  text-white   p-2" style="background:#4682B4;">Washing Mecine</h4>
-                <div class="card-body ">
-                    <img src="" class="img-fluid" alt="PEL"></a> 
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-              
-            <div class="card shadow-lg ">
-                <h4 class="card-title  text-white   p-2" style="background:#4682B4;">Water</h4>
-                <div class="card-body ">
-                    <img src="" class="img-fluid" alt="PEL"></a> 
-                </div>
-            </div>
-        </div> -->
       </div>
     </div>
     </section>
