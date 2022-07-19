@@ -40,20 +40,24 @@ h1{
 
 @yield('content') 
 
-
+ 
 
 
 
 @include('front.layout.footer')
 
 <!-- Java Script -->
-<script src="js/Jquery.js"></script>
 
-<script src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')}}"></script>
-  <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')}}"></script>
-  <script src="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')}}"></script>
  <!-- Ajax Call Customer Requests-->
  <script type="text/javascript" src="{{asset('js/Ajaxrequests.js')}}"></script>
-
+    <!-- jQuery -->
+    <script src="{{asset('admin_theme/vendors/jquery/dist/jquery.min.js')}}"></script>
+    <!-- Bootstrap -->
+    <script src="{{asset('admin_theme/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <!-- NProgress -->
+    <script src="{{asset('admin_theme/vendors/nprogress/nprogress.js')}}"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="{{asset('admin_theme/build/js/custom.min.js')}}"></script>
+    @stack('footer-script')
  </body>
 </html>

@@ -40,7 +40,7 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
-
+ 
     public function showRegistrationForm(){
         $alltypes = Usertype::all();
         return view('auth.register')->with('type',$alltypes);

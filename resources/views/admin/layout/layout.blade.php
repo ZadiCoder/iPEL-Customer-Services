@@ -63,3 +63,4 @@
     @stack('footer-script')
   </body>
 </html>
+  

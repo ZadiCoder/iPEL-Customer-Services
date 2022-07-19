@@ -5,6 +5,9 @@ use App\Http\Controllers\BaseController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\RequestDetailsController;
+
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
@@ -13,8 +16,10 @@ Route::get('/welcome', function () {
 Route::get('/',[BaseController::class,'home'])->name('iPEL');
 Route::get('/service/details/{id}',[BaseController::class,'show_service_details'])->name('service.details');
 
+
+
 Route::prefix('admin')->group(function () {
-Route::get('dashboard',[AdminController::class,'dashboard'])->name('dashboard');
+Route::get('dashboard',[AdminController::class,'dashboard'])->name('admin.dashboard');
 Route::get('category/list',[CategoryController::class,'index'])->name('category.list');
 Route::get('category/add',[CategoryController::class,'create'])->name('category.create');
 Route::post('category/add',[CategoryController::class,'store'])->name('category.store');
@@ -31,6 +36,13 @@ Route::post('service/update/{id}',[ServiceController::class,'update'])->name('se
 Route::get('/service/delete',[ServiceController::class,'destroy'])->name('service.delete');
 });
 
+//customer dashboard
+Route::prefix('customer')->group(function () {
+Route::get('dashboard',[CustomerController::class,'show'])->name('customer.dashboard');
+Route::post('/service/details',[RequestDetailsController::class,'store'])->name('store');
+Route::get('/requests/{id}',[RequestDetailsController::class,'show'])->name('show');
+
+});
 
 
 

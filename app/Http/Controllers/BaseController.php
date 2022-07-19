@@ -13,11 +13,16 @@ class BaseController extends Controller
     }
     public function show_service_details($id){
       $image = Category::find($id);
-    $details = DB::table('services')
-          ->join('categories', 'categories.id', '=', 'services.category_id')
+  //  $details = DB::table('services')
+         // ->join('categories', 'categories.id', '=', 'services.category_id')
+         // ->where('services.category_id',$id)
+         // ->get();
+         $details = DB::table('categories')
+          ->join('services', 'services.id', '=', 'categories.id')
           ->where('services.category_id',$id)
           ->get();
-        
+    
+       //  dd($details);
         return view('front.service_detail',compact('details','image'));
     }
   

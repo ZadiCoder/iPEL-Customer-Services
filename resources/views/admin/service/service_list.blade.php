@@ -17,7 +17,7 @@
         @foreach ($service as $key=>$data)
         <tr>
             <td>{{$key+1}}</td>
-            <td>{{$data->name}}</td>
+            <td>{{$data->service_name}}</td>
             <td>{{$data->category->category_name}}</td>
             <td>{{$data->price}}</td>
             <td>{{$data->created_at}}</td>

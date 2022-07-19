@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>Admin Dashboard! | </title>
+    <title>Customer Dashboard! | </title>
 
     <!-- Bootstrap -->
     <link href="{{asset('admin_theme/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -33,8 +33,8 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
-          @include('admin.layout.sidebar')
-          @include('admin.layout.header')
+          @include('customer.layout.sidebar')
+          @include('customer.layout.header')
 
 
         <!-- page content -->

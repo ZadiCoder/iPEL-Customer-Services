@@ -29,7 +29,7 @@
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <input type="text" name="name" required="required"
-                     class="form-control col-md-7 col-xs-12" value="{{$service->name}}">
+                     class="form-control col-md-7 col-xs-12" value="{{$service->service_name}}">
                 </div>
             </div>
             <div class="form-group">
@@ -41,9 +41,7 @@
                      class="form-control col-md-7 col-xs-12" value="{{$service->price}}">
                 </div>
             </div>
-            <div>
-                <h5>{{$service->category_id}}</h5>
-            </div>
+      
             <div class="ln_solid"></div>
             <div class="form-group">
               <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
